@@ -1,9 +1,11 @@
 import React, { useMemo, useCallback, useRef } from 'react';
 import * as THREE from 'three';
-import { useFrame, useLoader } from 'react-three-fiber';
+import { useFrame, useLoader } from '@react-three/fiber';
 
 // we are using this image as our texture
 import circle from './three_assets/circle.png';
+
+
 
 const Points = () => {
 
