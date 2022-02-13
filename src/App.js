@@ -1,10 +1,15 @@
-import * as THREE from 'three';
-import { Canvas } from 'react-three-fiber';
+import { Suspense } from 'react';
+
+import AnimationCanvas from './AnimationCanvas';
 import './App.css';
+
 
 function App() {
   return (
-    <div>
+    <div className="anim">
+      <Suspense fallback={<div>Loading...</div>}>
+        <AnimationCanvas/>
+      </Suspense>
     </div>
   );
 }
